@@ -1,0 +1,120 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+
+        background-color: black;
+        color: white;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .title {
+        background-color: antiquewhite;
+        font-size: large;
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid violet;
+        height: 100px;
+        width: 100%;
+        color: black;
+    }
+
+    .int {
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+    }
+
+    .int input {
+        width: 300px;
+        height: 30px;
+    }
+
+    .int .i {
+        padding-left: 10px;
+        border-radius: 12px;
+        color: black;
+        border: 3px solid darkmagenta;
+    }
+
+    .check {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    .btn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+
+    .check button {
+        position: relative;
+        width: 150px;
+        height: 30px;
+        color: black;
+        box-shadow: 0 8px 8px 2px rgba(63, 63, 63, 0.5);
+        border-radius: 15px;
+        border: 3px solid rgb(194, 0, 171);
+        font-size: medium;
+        cursor: pointer;
+        text-align: center;
+        justify-content: center;
+        z-index: 1;
+        transition: 0.3s all ease;
+    }
+
+    button::before {
+        transition: 0.3s all ease;
+        position: absolute;
+        content: "";
+        z-index: -1;
+        border-radius: 14px;
+        top: 0%;
+        bottom: 0%;
+        left: 50%;
+        right: 50%;
+        opacity: 0;
+        background-color: darkmagenta;
+    }
+
+    button:hover::before,
+    button:focus::before {
+        opacity: 1;
+        left: 0%;
+        right: 0%;
+        transition: 0.9s all ease;
+    }
+
+    button:active {
+        transform: scale(0.9);
+    }
+
+    .correct {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        margin-top: 10px;
+    }
+
+    .score {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        margin-top: 10px;
+    }
