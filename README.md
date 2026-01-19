@@ -17,7 +17,7 @@ A simple and fun **Guess The Number** game built using **HTML, CSS, and JavaScri
 - JavaScript
 
 ## 🌐 Live Demo
-👉 https://your-vercel-link-here.vercel.app/
+👉 https://guess-the-number-game-lilac-pi.vercel.app/
 
 ## 📌 How to Play
 1. Enter a number between **1 to 10**
